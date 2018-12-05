@@ -2,14 +2,19 @@
 # Version of  [Emojinator](https://github.com/akshaybahadur21/Emojinator) trained for lesser classes
 ## With some bug fixes
 
+Ref:
+Original contributors:
+##### 1) [Akshay Bahadur](https://github.com/akshaybahadur21/)
+##### 2) [Raghav Patnecha](https://github.com/raghavpatnecha)
+
 This code helps you to recognize and classify different emojis. As of now, we are only supporting hand emojis.
 
 ### Code Requirements
 You can install Conda for python which resolves all the dependencies for machine learning.
 
-##### pip install requirements.txt
 
 ### Description
+This uses Emojis code with updating few bugs and training with lesser classes. 
 Emojis are ideograms and smileys used in electronic messages and web pages. Emoji exist in various genres, including facial expressions, common objects, places and types of weather, and animals. They are much like emoticons, but emoji are actual pictures instead of typographics.
 
 ### Functionalities
@@ -31,10 +36,7 @@ If you face any problem, kindly raise an issue
 4) If you want to train the model, run 'TrainEmojinator.py'
 5) Finally, run `Emojinator.py` for testing your model via webcam.
 
-### Contributors
 
-##### 1) [Akshay Bahadur](https://github.com/akshaybahadur21/)
-##### 2) [Raghav Patnecha](https://github.com/raghavpatnecha)
  
 ### Emojinator
 <img src="https://github.com/akshaybahadur21/Emojinator/blob/master/emo.gif">
