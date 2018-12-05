@@ -8,9 +8,9 @@ from keras.callbacks import ModelCheckpoint
 import pandas as pd
 
 import keras.backend as K
-
+num_of_classes = 6
 def keras_model(image_x, image_y):
-    num_of_classes = 6
+
     model = Sequential()
     model.add(Conv2D(32, (5, 5), input_shape=(image_x, image_y, 1), activation='relu'))
     model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2), padding='same'))
@@ -38,16 +38,20 @@ def main():
     X = X[:, 1:2501]
     Y = Y[:, 0]
 
-    X_train = X[0:5000, :]
+    total_images = num_of_classes*1200
+    train_images = int(total_images)*0.85
+
+
+    X_train = X[0:train_images, :]
     X_train = X_train / 255.
-    X_test = X[5000:7199, :]
+    X_test = X[train_images:total_images, :]
     X_test = X_test / 255.
 
     # Reshape
     Y = Y.reshape(Y.shape[0], 1)
-    Y_train = Y[0:5000, :]
+    Y_train = Y[0:train_images, :]
     Y_train = Y_train.T
-    Y_test = Y[5000:7199, :]
+    Y_test = Y[train_images:total_images, :]
     Y_test = Y_test.T
 
     print("number of training examples = " + str(X_train.shape[0]))
