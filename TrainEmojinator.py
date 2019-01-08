@@ -39,7 +39,7 @@ def main():
     Y = Y[:, 0]
 
     total_images = num_of_classes*1200
-    train_images = int(total_images)*0.85
+    train_images = int(total_images*0.85)
 
 
     X_train = X[0:train_images, :]
