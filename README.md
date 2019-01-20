@@ -1,6 +1,6 @@
 
-# Version of  [Emojinator](https://github.com/akshaybahadur21/Emojinator) trained for lesser classes
-## With some bug fixes
+# Gesture Detector - Automated feedback system based on Gesture
+
 
 Ref:
 Original contributors:
@@ -9,13 +9,10 @@ Original contributors:
 
 This code helps you to recognize and classify different emojis. As of now, we are only supporting hand emojis.
 
-### Code Requirements
-You can install Conda for python which resolves all the dependencies for machine learning.
 
 
 ### Description
-This uses Emojis code with updating few bugs and training with lesser classes. 
-Emojis are ideograms and smileys used in electronic messages and web pages. Emoji exist in various genres, including facial expressions, common objects, places and types of weather, and animals. They are much like emoticons, but emoji are actual pictures instead of typographics.
+This project tries to understand user feedback from the gestures he/she shows with her hands. Feel free to train the model on your favorite hand gestures and see if it can detect the same later on when your friends make the same gestures.
 
 ### Functionalities
 1) Filters to detect hand.
@@ -26,7 +23,7 @@ Emojis are ideograms and smileys used in electronic messages and web pages. Emoj
 
 1) Network Used- Convolutional Neural Network
 
-If you face any problem, kindly raise an issue
+
 
 ### Procedure
 
