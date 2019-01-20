@@ -32,49 +32,97 @@ If you face any problem, kindly raise an issue
 
 1) Install virtual environment with the following command
 
-pip install virtualenv
+```sh
+$ pip install virtualenv
+```
+
 
 2) Create a virtualenvironment
 
-virtualenv -p python3 venv3
+```sh
+$ virtualenv -p python3 venv3
+```
+
 
 3) Activate the virtual environment
+```sh
+$ source venv3/bin/activate
+```
 
-source venv3/bin/activate
 
 4) make sure you are inside the project location, that is inside the folder Gesture-detection
-cd Gesture-detection
+
+```sh
+$ cd Gesture-detection
+```
+
 
 5) Now install the dependencies from requirements.txt
 Try,
-pip install -r requirements.txt
+
+```sh
+$ pip install -r requirements.txt
+```
+
+
 
 If you face issues installing, consult us
 
 6) Now open a python terminal 
 
-python
+```sh
+$ python
+```
+
+
+
 
 7) Execute the following commands in python terminal
-python
->>> import Video_Handler
 
-Here you record the second gesture
->>> Video_Handler.save_gestures(0)
+```sh
+>>> import Video_Handler
+```
+
 
 Here you record the first gesture
+
+```sh
+>>> Video_Handler.save_gestures(0)
+```
+
+
+
+Here you record the second gesture
+
+```sh
 >>> Video_Handler.save_gestures(1)
+```
+
 
 Now you create a csv file corresponding to the gestures
+
+```sh
 >>> Video_Handler.createCSV_from_gestures()
+```
+
+
 After execution of above line, a file "train_foo.csv" should be created
 
 Now train your model
+
+```sh
 >>> Video_Handler.train(2)
+```
 Because you trained with two gestures, the parameter passed is 2
 
 Now see your model in action
+
+```sh
 >>> Video_Handler.start_gesture_recognition()
+```
+
+
+
 
 
 
