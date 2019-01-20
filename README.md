@@ -30,16 +30,57 @@ If you face any problem, kindly raise an issue
 
 ### Procedure
 
-1) First, you have to create a gesture database. For that, run `CreateGest.py`. Enter the gesture name and you will get 2 frames displayed. Look at the contour frame and adjust your hand to make sure that you capture the features of your hand. Press 'c' for capturing the images. It will take 1200 images of one gesture. Try moving your hand a little within the frame to make sure that your model doesn't overfit at the time of training.
-2) Repeat this for all the features you want.
-3) Run `CreateCSV.py` for converting the images to a CSV file
-4) If you want to train the model, run 'TrainEmojinator.py'
-5) Finally, run `Emojinator.py` for testing your model via webcam.
+1) Install virtual environment with the following command
+
+pip install virtualenv
+
+2) Create a virtualenvironment
+
+virtualenv -p python3 venv3
+
+3) Activate the virtual environment
+
+source venv3/bin/activate
+
+4) make sure you are inside the project location, that is inside the folder Gesture-detection
+cd Gesture-detection
+
+5) Now install the dependencies from requirements.txt
+Try,
+pip install -r requirements.txt
+
+If you face issues installing, consult us
+
+6) Now open a python terminal 
+
+python
+
+7) Execute the following commands in python terminal
+python
+>>> import Video_Handler
+
+Here you record the second gesture
+>>> Video_Handler.save_gestures(0)
+
+Here you record the first gesture
+>>> Video_Handler.save_gestures(1)
+
+Now you create a csv file corresponding to the gestures
+>>> Video_Handler.createCSV_from_gestures()
+After execution of above line, a file "train_foo.csv" should be created
+
+Now train your model
+>>> Video_Handler.train(2)
+Because you trained with two gestures, the parameter passed is 2
+
+Now see your model in action
+>>> Video_Handler.start_gesture_recognition()
 
 
- 
-### Emojinator
-<img src="https://github.com/akshaybahadur21/Emojinator/blob/master/emo.gif">
+
+
+
+
 
 
 

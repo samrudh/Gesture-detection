@@ -1,6 +1,7 @@
-numpy
-matplotlib
-cv2
+numpy==1.16.0
+matplotlib==3.0.2
+opencv-python==3.4.4.19
+Pillow==5.4.1
 keras
 pandas
 h5py
