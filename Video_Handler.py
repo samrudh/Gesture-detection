@@ -105,6 +105,9 @@ def save_gestures(gesture_id):
         if flag_start_capturing == True:
             frames += 1
         if pic_no == total_pics:
+            print("All gestures recorded")
+            cap.release()
+            cv2.destroyAllWindows()
             break
 
 

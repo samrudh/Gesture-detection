@@ -6,3 +6,4 @@ keras
 pandas
 h5py
 scipy
+tensorflow

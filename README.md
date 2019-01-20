@@ -80,6 +80,7 @@ $ python
 >>> import Video_Handler
 ```
 
+Before going to the next step please ensure that the folder "gestures" is empty.
 
 Here you record the first gesture
 
