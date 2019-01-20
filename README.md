@@ -2,10 +2,6 @@
 # Gesture Detector - Automated feedback system based on Gesture
 
 
-Ref:
-Original contributors:
-##### 1) [Akshay Bahadur](https://github.com/akshaybahadur21/)
-##### 2) [Raghav Patnecha](https://github.com/raghavpatnecha)
 
 This code helps you to recognize and classify different emojis. As of now, we are only supporting hand emojis.
 
@@ -120,6 +116,12 @@ Now see your model in action
 ```
 
 
+
+Credits and refrences:
+Original contributors:
+##### 1) [Alexander Mordvintsev & Abid K. Revision 43532856](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_objdetect/py_face_detection/py_face_detection.html)
+##### 2) [Akshay Bahadur](https://github.com/akshaybahadur21/)
+##### 3) [Raghav Patnecha](https://github.com/raghavpatnecha)
 
 
 
