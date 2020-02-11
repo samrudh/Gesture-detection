@@ -65,8 +65,8 @@ def main():
 
     train_y = np_utils.to_categorical(Y_train)
     test_y = np_utils.to_categorical(Y_test)
-    train_y = train_y.reshape(train_y.shape[1], train_y.shape[2])
-    test_y = test_y.reshape(test_y.shape[1], test_y.shape[2])
+    train_y = train_y.reshape(train_y.shape[0], train_y.shape[1])
+    test_y = test_y.reshape(test_y.shape[0], test_y.shape[1])
     X_train = X_train.reshape(X_train.shape[0], 50, 50, 1)
     X_test = X_test.reshape(X_test.shape[0], 50, 50, 1)
     print("X_train shape: " + str(X_train.shape))
